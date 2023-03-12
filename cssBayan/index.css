@@ -21,6 +21,57 @@ header {
     text-align: start;
 }
 
+.mem-block__img {
+    height: 0;
+    overflow: hidden;
+}
+
+input:checked ~ .mem-block__img {
+    height: auto;
+}
+
+input:hover ~ .mem-block__img {
+    height: auto;
+}
+
+.mem-block__img-mem {
+    width: 24em;
+    height: auto;
+}
+
+.mem-block__img-open {
+    width: 2em;
+    height: auto;
+    cursor: pointer;
+}
+
+.mem-block__text {
+    font-size: 22px;
+    color: #029795;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.mem-block {
+    border-bottom: 8px solid rgb(156, 179, 7);
+    text-align: start;
+}
+
+.mem-block__text-and-open {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.mem-block__column-two {
+    justify-self: end;
+}
+
+input {
+    display: none;
+}
+
+
+
 
 
 @media(max-width: 1920px) {
